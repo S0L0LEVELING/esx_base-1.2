@@ -1,0 +1,141 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    color: white;
+    font-family: "apple";
+}
+
+@font-face {
+    font-family: "apple";
+    src: url(./fonts/SF-UI-Display-Regular.otf);
+}
+td {
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(26, 24, 24);
+}
+
+tr{
+    background-color: rgb(36, 33, 33);
+}
+
+
+.container {
+    width: 65%;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(26, 24, 24);
+    border: 5px solid rgb(48, 44, 44);
+}
+
+.inner {
+    position: absolute;
+    top: 4vh;
+    left:6vh;
+    width: 90%;
+    background-color: rgb(54, 50, 50);
+    height: 70%;
+    overflow-y: scroll;
+}
+
+th {
+    font-family: "apple";
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+}
+
+
+table {
+    width: 100%;
+}
+
+
+.unban-btn {
+    padding: 10px;
+    background-color: red;
+    border: transparent;
+    border-radius: 7px;
+    width: 100%;
+    color: white;
+}
+
+
+
+.container > .loading > img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 175px;
+    height: 175px;
+}
+
+.container > .loading > h1 {
+    position: absolute;
+    top: 60%;
+    left: 44%;
+    font-size: 20px;
+    color: white;
+    font-family: "apple";
+    transform: translate(-50%, -50%);
+    animation: pulse 1s linear infinite;
+}
+
+@keyframes pulse {
+    0% {
+     transform: scale(1, 1);
+    }
+
+    50% {
+     transform: scale(1.1, 1.1);
+    }
+
+    100% {
+    transform: scale(1, 1);
+    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+background: #f1f1f1; 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+background: #555; 
+}
+
+#searchbar {
+    padding: 10px;
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    border: 3px solid rgb(48, 44, 44);
+    position: absolute;
+    bottom: 4vh;
+    left: 37%;
+    width: 300px;
+}
+
+

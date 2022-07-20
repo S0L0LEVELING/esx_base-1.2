@@ -1,0 +1,34 @@
+.notify {
+    width: max-content;
+    height: 75px;
+    background-color: #B33F40 ;
+    position: absolute;
+    margin: auto;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 1;
+    border-radius: 10px;
+    margin-left: -15%;
+}
+.notify-flex {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+}
+
+.notify-flex > div {
+    margin: 5px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+@font-face {
+    font-family: 'KeepCalm';
+    font-style: normal;
+    font-weight: normal;
+    src: url('./KeepCalm-Medium.ttf');
+}

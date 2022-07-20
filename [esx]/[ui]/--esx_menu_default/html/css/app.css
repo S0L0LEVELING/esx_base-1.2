@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald);
+@font-face {
+  font-family: 'Circular';
+  font-weight: normal;
+  font-style: normal;
+  src: url(https://agaar.in/Circular-Book.woff2) format('woff2');
+}
+@font-face {
+  font-family: pcdown;
+  src: url('../fonts/pdown.ttf');
+}
+.menu {
+  font-family: 'Oswald', sans-serif;
+  min-width: 300px;
+  color: #fff;
+  /*box-shadow: 0px 0px 50px 0px #000;*/
+  position: absolute;
+  overflow: hidden;
+  background-color: #7be2e700;
+  /*border: 1px solid rgba(88,88,88,0.65);*/ 
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.menu.align-left {
+  left: 40;
+  top: 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-top-left {
+  left: 40;
+  top: 40; 
+  max-height: calc(100% - 80px);
+}
+
+.menu.align-top {
+  left: 50%;
+  top: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-top-right {
+  right: 40;
+  top: 40;
+}
+.menu.align-right {
+  right: 40;
+  top: 50%;
+  transform: translate(0, -50%); 
+}
+
+.menu.align-bottom-right {
+  right: 40;
+  bottom: 40;
+}
+
+.menu.align-bottom {
+  left: 50%;
+  bottom: 40;
+  transform: translate(-50%, 0); 
+}
+
+.menu.align-bottom-left {
+  left: 40;
+  bottom: 40;
+}
+
+.menu.align-center {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); 
+}
+
+.menu .head {
+  /*background-image: url('../img/background.png');
+  background-repeat: no-repeat;
+  background-color: rgba(21,21,21,0.9);*/
+  position: relative;
+  color: #fff;
+  font-size: 24px;
+  height: 60px;
+  line-height: 60px;
+  font-family: 'Oswald', sans-serif !important;
+  border-bottom: 1px solid rgba(190, 190, 190, .4);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.menu.align-top-right .head {
+	height: 80px;
+  line-height: 80px;
+}
+
+.menu .menu-items {
+  max-height: 80%;
+  overflow-y: auto;
+  border: none;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.menu .menu-items .menu-item {
+  display: block;
+  /*background-color: rgba(21,21,21,0.95);*/
+  --box-shadow: inset 0px 0px 0px 1px rgba(65, 65, 65, 0.9);
+  /*border-top: solid 1px rgba(65, 65, 65, 0.95);*/
+  height: 50px;
+  line-height: 50px;
+  color: #FFFFFF;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 10px;
+  border-radius: 5px;
+}
+
+.menu .menu-items .menu-item.selected {
+  background: -webkit-linear-gradient(right, #f7be29 0%, #d54d1d 100%); /* Chrome 10-25, Safari 5.1-6 */
+}
+
+.pointer {
+ /* background: -webkit-linear-gradient(44deg, #d73939 0%,#f26522 40%,#f26522 40%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  font-weight: bold;
+}
+
+.amount {
+  display: inline-block;
+  color:#6fa8dc;
+  margin-right: 5px;
+  margin-left: 5px;
+  min-width: 24px;
+  text-align: center;
+}
+
+.menu .menu-items .menu-item.selected .amount {
+  color: #000000;
+}
+
+.menu-items::-webkit-scrollbar-track {
+    background-color: none;
+    border: none;
+}
+
+.menu-items::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-items::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+}
+.slide {
+  display: inline-block;
+  height: 28px;
+  line-height: 24px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  padding: 0px 10px;
+}

@@ -1,0 +1,91 @@
+var tableauQuestion = [
+	{
+		question: "Als je 80 km / u rijdt en een woonplaats nadert, betekent dit dat :",
+		propositionA: "Je moet versnellen",
+		propositionB: "U kunt uw snelheid behouden als u andere voertuigen niet passeert",
+		propositionC: "Je moet vertragen",
+		propositionD: "U kunt uw snelheid behouden",
+		reponse: "C"
+	},
+
+	{
+		question: "Je staat op het punt bij het groene licht rechtsaf te slaan, maar je ziet een voetgangersoversteekplaats :",
+		propositionA: "Je gaat voor de voetganger ",
+		propositionB: "U controleert of er geen ander voertuig is en u passeert",
+		propositionC: "Je wacht tot de voetganger klaar is",
+		propositionD: "Je roept de voetganger om te passeren",
+		reponse: "C"
+	},
+
+	{
+		question: "Zonder enige indicatie : De snelheid in een woonwijk is : __ km/h",
+		propositionA: "30",
+		propositionB: "35",
+		propositionC: "45",
+		propositionD: "60",
+		reponse: "A"
+	},
+
+	{
+		question: "Voor elke verandering van rijstrook moet u :",
+		propositionA: "Kijk je in je spiegels",
+		propositionB: "Controleer uw blinde hoeken",
+		propositionC: "Geef uw bedoelingen aan",
+		propositionD: "Alle antwoorden zijn goed",
+		reponse: "D"
+	},
+
+	{
+		question: "Welk alcoholpromillage is geclassificeerd als rijden onder invloed?",
+		propositionA: "0.05%",
+		propositionB: "0.18%",
+		propositionC: "0.08%",
+		propositionD: "0.06%",
+		reponse: "C"
+	},
+
+	{
+		question: "Wanneer kunt u bij een stoplicht blijven rijden?",
+		propositionA: "Als het groen is",
+		propositionB: "Als er niemand op de kruising is",
+		propositionC: "Als je je bevindt in een schoolzone",
+		propositionD: "Als het groen en / of rood is en ik sla rechtsaf",
+		reponse: "D"
+	},
+
+	{
+		question: "Een voetganger staat bij een rood stoplicht voor voetgangers",
+		propositionA: "Je laat hem / haar passeren",
+		propositionB: "Je observeert voordat je verder gaat",
+		propositionC: "Je zwaait naar hem / haar",
+		propositionD: "Je rijdt door omdat uw verkeerslicht op groen staat",
+		reponse: "D"
+	},
+
+	{
+		question: "Wat is toegestaan ​​bij het passeren van een ander voertuig",
+		propositionA: "Je volgt het op de voet om het sneller te passeren",
+		propositionB: "Passeer hem door de weg te verlaten",
+		propositionC: "Rijd op de tegenoverliggende weg om deze in te halen",
+		propositionD: "Overschrijd de snelheidslimiet",
+		reponse: "C"
+	},
+
+	{
+		question: "U rijdt op een ringweg die een maximale snelheid aangeeft van 110 km / u. Het meeste verkeer is 120 km / u, dus u moet niet harder rijden dan :",
+		propositionA: "80 kmh",
+		propositionB: "40 kmh",
+		propositionC: "50 kmh",
+		propositionD: "110 kmh",
+		reponse: "D"
+	},
+
+	{
+		question: "Wanneer u door een ander voertuig wordt gepasseerd, is het belangrijk om dit NIET te doen :",
+		propositionA: "Vertragen",
+		propositionB: "Kijk in je spiegels",
+		propositionC: "Bekijk andere chauffeurs",
+		propositionD: "Verhoog uw snelheid",
+		reponse: "D"
+	},
+]

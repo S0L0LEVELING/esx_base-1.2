@@ -1,0 +1,1 @@
+this is NOT a resource! put me into the `plugins` folder inside EasyAdmin, you can delete the fxmanifest.lua file.

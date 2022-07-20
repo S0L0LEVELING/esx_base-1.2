@@ -1,0 +1,17 @@
+Locales['en'] = {
+	['GPS_info'] = 'Je hebt een nieuwe marker op je gps',
+	['cancel_mission'] = 'Je hebt de opdracht ~r~gecancelled~s~',
+	['pickup'] = '~INPUT_CONTEXT~ om het raam schoon te maken.',
+	['end_service'] = 'Volledige service',
+	['take_service'] = 'Start werk',
+	['end_service_notif'] = 'Einde van de Service',
+	['take_service_notif'] = 'Service nemen ~g~',
+	['start_job'] = 'Gebruik de ~b~DEL~s~ knop om je baan te starten',
+	['Vehicle_Menu_Title'] = 'Service voertuig',
+	['in_vehicle'] = '~r~Stap uit uw auto!',
+	['vehicle_broken'] = '~r~ Ga het voertuig laten repareren!',
+	['bad_vehicle'] = 'U kunt alleen ~b~servicewagens opslaan',
+	['not_good_veh'] = '~r~U moet zich in uw servicewagen bevinden',
+	['stop_npc'] = 'Actie ~r~onmogelijk~s~: Ga naar de aanbetaling',
+	 ['wait_five']  = 'Je moet 5 minuten ~r~wachten~s~',
+}

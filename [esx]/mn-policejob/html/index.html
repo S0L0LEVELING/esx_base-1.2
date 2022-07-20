@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mn-policejob</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="wapenkamer">
+            <div class="sec-center"> 	
+                <input class="dropdown" type="checkbox" id="dropdown" name="dropdown"/>
+                <label class="for-dropdown" for="dropdown">WapenKamer <i class="uil uil-arrow-down"></i></label>
+                <div class="section-dropdown"> 
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="aangiftescherm">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Aangifte Systeem</li>
+                <li class="nav-item-back">Welkom Manius</li>
+            </ul>
+        </div>
+
+        <div class="aangiftescontainer">
+        </div>
+    </div>
+
+    <div class="aangiftescherm-specifiek">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Aangifte Systeem</li>
+                <li class="nav-item-back">Welkom Manius</li>
+            </ul>
+        </div>
+        
+        <div class="aangifte-invulvelden">
+            <img src="./img/pv_logo.png" alt="" width="300px" height="100px" style="display: block; margin-left: auto; margin-right: auto; ; margin-top: 100px;">
+            <h1 class="titel-aangifte" id="id-aangifte">Aangifte Rapport #005</h1>
+            <ul>
+                <li class="liinput">Opgemaakt door:<input class="invoervelden-aangifte" id="opgemaakdoor" type="text" placeholder="MN" readonly></input></li>
+                <li class="liinput">Datum:<input class="invoervelden-aangifte" id="datum" type="text" placeholder="14/07/2021" style="margin-left: 182px;" readonly></input></li>
+                <li class="liinput">Beschrijving: </br><textarea class="invoervelden-aangifte-big" id="Beschrijvingaangifte"  style="margin-top: 25px; font-size: large;" readonly></textarea></li>
+                <li class="liinput"></br><input class="invoervelden-aangifte" type="hidden" id="hiddenid" style="margin-left: 182px;" readonly></input></li>
+            </ul>
+            <button id="deleteaangifte" style="margin-left: 41%; padding: 10px; background-color: #004682; border-radius: 10px; color: white;   font-family: 'Acrom-Bold';">Aangifte Rapport Verwijderen</button>
+        </div>
+    </div>
+
+
+    <div class="aangiftescherm-aanmaken">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Aangifte Systeem</li>
+                <li class="nav-item-back">Welkom Manius</li>
+            </ul>
+        </div>
+        
+        <div class="aangifte-invulvelden">
+            <img src="./img/pv_logo.png" alt="" width="300px" height="100px" style="display: block; margin-left: auto; margin-right: auto; ; margin-top: 100px;">
+            <h1 class="titel-aangifte" id="id-aangifte">Nieuw Rapport aanmaken</h1>
+            <ul>
+                <li class="liinput">Eigen naam:<input style="margin-left: 170px;" class="invoervelden-aangifte" id="eigennaam" type="text" placeholder="Eigen naam" ></input></li>
+                <li class="liinput">Naam Aangever:<input style="margin-left: 136px;" class="invoervelden-aangifte" id="aangevernaam" type="text" placeholder="Naam aangever" ></input></li>
+                <li class="liinput">Onderwerp:<input class="invoervelden-aangifte" id="onderwerpnieuw" type="text" placeholder="Vul hier het onderwerp in..." style="margin-left: 176px;" ></input></li>
+                <li class="liinput">Beschrijving: </br><textarea class="invoervelden-aangifte-big" id="Beschrijvingaangifte2"  style="margin-top: 25px; font-size: large;" ></textarea></li>
+            </ul>
+            <input class="deleteaangifte" type="button" style="margin-left: 41%; padding: 10px; background-color: #004682; border-radius: 10px; color: white;   font-family: 'Acrom-Bold';" value="Aangifte Rapport Toevoegen"></input>
+        </div>
+    </div>
+
+    <div class="inbeslagname-voertuig">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Inbeslagname</li>
+            </ul>
+        </div>
+        
+        <h4 style="font-family: 'Acrom-Bold'; text-align: center; font-size: x-large;">Voertuig Inbeslagname</h4>
+
+        <ul>
+            <li style="list-style-type: none; margin-bottom: 10px;"><p style="font-family: 'Acrom-Bold';">Model:<input id="model" type="text" placeholder="Model" style="margin-left: 100px; font-family: 'Acrom-Bold';"></p></li>
+            <li style="list-style-type: none; margin-bottom: 10px;"><p style="font-family: 'Acrom-Bold';">Eigenaar:<input id="eigenaar" type="text" placeholder="Eigenaar" style="margin-left: 76px; font-family: 'Acrom-Bold';"></p></li>
+            <li class="liinput"><input class="invoervelden-aangifte" type="hidden" id="hiddenidentifier" readonly></input></li>
+            <li style="list-style-type: none; margin-bottom: 10px;"><p style="font-family: 'Acrom-Bold';">Kenteken:<input id="kenteken" type="text" placeholder="Kenteken" style="margin-left: 73px; font-family: 'Acrom-Bold';"></p><p style="font-family: 'Acrom-Bold';">Reden:</p></li>
+
+        </ul>
+        <textarea style="margin-left: 40px; width: 80%; height: 100px;" class="voertuigreden"  id="voertuigreden"></textarea>
+        <input id="neemvoertuiginbeslag" type="button" style="margin-left: 41%; padding: 10px; background-color: #004682; border-radius: 10px; color: white;   font-family: 'Acrom-Bold';" value="Voertuig in beslagnemen"></input>
+    </div>
+
+    <div class="kledingkamer">
+        <div class="kledingkamer-logo" style="text-align: center; margin-top: 50px;">
+            <img src="./img/icon.png" alt="" width="75px" height="74px" style="align-items: center; text-align: center;">
+        </div>
+        <h1 class="title-kledingkamer">MNRP Politie</br>Kledingkamer</h1>
+        <div class="kleding-display">
+
+        </div>
+    </div>
+
+    <div class="proces-verbaal">
+        <div class="proces-logo">
+            <img src="./img/pv_logo.png" alt="" width="250px" height="85px" >
+        </div>
+        <div class="Politieinfo">
+            <ul class="proces-ul">
+                <li><p id="woord-proces">Politie Zortus Roleplay</p></li>
+                <li><p id="woord-proces">Provincie Noord-Brabant</p></li>
+
+                </br>
+                <li><p id="woord-proces">Bonnummer: ZTRP 01378201</p></li>
+                <li><p id="woord-proces">Zaaknummer: ZTRP 040</p></li>
+                <li><p id="woord-proces">BSN: 91743816215732142</p></li>
+            </ul>
+        </div>
+
+        <div class="rest">
+            <h1><strong>PROCES-VERBAAL</strong></h1>
+            <p><strong>Overtreding</strong></p>
+            <p><strong>Verklaring:</strong></p>
+            <textarea id="proces-text" style="width: 70%; height: 25%;"></textarea>
+            </br>
+            <select id="boetes" name="boetes">
+            </select>
+            </br>
+            </br>
+            <button id="proces-btn">Bevestigen</button>
+        </div>
+    </div>
+
+
+    <div class="boss-actions">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Boss Actions</li>
+            </ul>
+        </div>
+
+
+        <div class="personeel">
+            <i class="fas fa-user-check fa-4x" id="boss-icon"></i>
+            <h1 style="font-family: 'Acrom-Bold'; font-size: 25px; color: white;"><strong>Personeel Management</strong></h1>
+        </div>
+
+        <div class="kluis">
+            <i class="fas fa-piggy-bank fa-4x" id="boss-icon"></i>
+            <h1 style="font-family: 'Acrom-Bold'; font-size: 25px; color: white;"><strong>Kluis</strong></h1>
+        </div>
+    </div>
+
+    <div class="boss-actions-kluis">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Boss Actions</li>
+            </ul>
+        </div>
+
+        <div class="kluis-interface">
+            <h1>Politie Kluis</h1>
+            <div class="cirkel">
+                <i class="fas fa-piggy-bank fa-4x" id="boss-icon"></i>
+                <h1 id="kluis-amount" style="font-family: 'Acrom-Bold'; position: absolute; left: 0; right: 0; bottom: 10; color: white;">€0</h1>
+            </div>
+            <div class="kluis-buttons">
+                <button class="deposit-button" onclick="Notify('storten')">Storten</button>
+                <button class="withdraw-button" onclick="Notify('opnemen')">Opnemen</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="amount-notify">
+        <div class="header-amount">
+            <ul class="headerul-amount">
+                <li class="nav-item-amount">Hoeveel?</li>
+            </ul>
+        </div>
+
+        <div class="notity-input">
+        </div>
+    </div>
+
+
+    <div class="job-notify">
+        <div class="header-job">
+            <ul class="headerul-job">
+                <li class="nav-item-job">Selecteer rang</li>
+            </ul>
+        </div>
+
+        <div class="job-input">
+            <select name="grades" id="job_grades">
+            </select>
+        </div>
+
+        <div class="job-input">
+            <button id="button-input" style="padding: 10px; background-color: #004682; border: none; border-radius: 10px; font-family: 'Acrom-Bold'; color: white;" onclick="NotifyButtonPressed('job')">Confirm</button>
+        </div>
+    </div>
+
+
+
+    <div class="boss-actions-personeel">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Boss Actions</li>
+            </ul>
+        </div>
+
+        <div class="boss-actions-personeel-grid">
+        </div>
+        <div class="boss-action-aanneembtn">
+            <button onclick="OpenAannemen()" id="boss-action-aanneembtn">Personeel Aannemen</button>
+        </div>
+    </div>
+    
+    <div class="boss-actions-user">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Boss Actions</li>
+            </ul>
+        </div>
+
+
+        <div class="user-container">
+            <div class="boss-actions-user-left">
+                <img src="./img/default.png" id="boss-actions-user-pic" alt="">
+                <h1 id="user-voornaam">Geert v Eijk</h1>
+                <p id="user-job-text" style="font-family: 'Acrom-Bold';">Politie - Hoofd Commisaris</p>
+            </div>
+
+
+            <div class="boss-actions-user-right">
+                <div class="boss-actions-user-form">
+                    <ol>
+                        <li id="user-voornaam2" class="boss-actions-user-form-li">Voornaam: Geert</li>
+                        <li id="user-lastname" class="boss-actions-user-form-li">Achternaam: van Eijk</li>
+                        <li id="user-fingerprint" class="boss-actions-user-form-li">Vingerafruk-id: MN91736128</li>
+                        <li id="user-bsn" class="boss-actions-user-form-li">BSN nummer: MNRP2818H13</li>
+                    </ol>
+                    <div style="text-align: center; margin: auto;" class="pv_margin">
+                        <img src="./img/pv_logo.png" alt="" width="250px" height="85px" >
+                    </div>
+                   
+                </div>
+                <div class="user-actions">
+                    <button id="personeelbtn" onclick="Ontslaan()">Ontslaan</button>
+                    <button id="personeelbtn" onclick="Notify('job')">Rang veranderen</button>
+                    <button id="personeelbtn" onclick="Notify('bonus')">Bonus Geven</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="add-user-container">
+        <div class="header">
+            <ul class="headerul">
+                <li class="nav-item"><img src="./img/icon.png" width="32" height="32" alt=""/></li>
+                <li class="nav-item">Politie MN RP </br> Boss Actions</li>
+            </ul>
+        </div>
+
+
+        <div style="text-align: center; margin: 20px;">
+            <img src="./img/pv_logo.png" alt="" width="250px" height="85px" >
+            <h1 style="font-family: 'Acrom-Bold'; font-weight: bold;">Contract</h1>
+            <p id="user-add-text" style="font-family: 'Acrom-Bold';">Door het volgende formulier in te vullen gaat u ermee akkoord <br> dat de heer/mevrouw ingevuld hieronder word aangenomen als werknemer Politie MNRP</p>
+            <select name="players" id="players">
+
+            </select>
+            <br>
+            <br>
+            <button onclick="NeemAan()" id="user-add-btn">Aannemen</button>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>

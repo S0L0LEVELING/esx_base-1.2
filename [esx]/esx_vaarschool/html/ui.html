@@ -1,0 +1,121 @@
+<head>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css" type="text/css">
+</head>
+
+<body>
+	<div class="full-screen">
+		<div class="question-container">
+			<!-- header -->
+			<div class="header">
+				<h1>Vaarschool</h1>
+			</div>
+			<!-- home -->
+			<div class="body home">
+				<div class="content">
+					<!-- ICI BREVE PRESENTATION -->
+					<center>
+						<img src="dmv.png" class="logo">
+						<br>
+						<p class="bold-text">Welkom bij vaarschool albatros!
+					</center>
+					<br>
+					<center>Laten we beginnen, de vragen worden aan je gesteld. 
+						<br>Onder andere real life vragen en de vaarregels op het water. Succes 
+						<br>
+						<br> We vinden het belangrijk dat alle inwoners van Hilversumhun vaar examen behalen voordat ze kunnen varen.
+						<br> Neem de tijd, en vaar met volle verstand.
+						<br>
+						<br> Theorie examen
+						<br> - De Theorie examen kost €7500,-, dit wordt niet terugbetaald als je de test niet haalt.
+						<br> - Geen paniek, en veel succes.
+					    <br>
+						<br> Vaarexamen
+						<br> - Het vaarexamen kost €10000,-, Net als bij het theorie-examen krijgt u deze vergoeding niet terug als u niet slaagt.
+						<br> - Wees alert tijdens het varen en voorkom ongevallen!</p>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnQuestion">Start</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Voortgang</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Question-->
+			<div class="body questionnaire-container">
+				<div class="content">
+					<h2 id="questionNumero"></h2>
+					<p id="question"></p>
+					<form class="form" id="question-form">
+						<div>
+							<input type="radio" name="question" id="answerA" value="A">
+							<label class="answerA"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerB" value="B">
+							<label class="answerB"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerC" value="C">
+							<label class="answerC"></label>
+						</div>
+						<div>
+							<input type="radio" name="question" id="answerD" value="D">
+							<label class="answerD"></label>
+						</div>
+						<button type="submit" id="submit" class="submit">Volgende vraag</button>
+					</form>
+				</div>
+				<div class="barre-progression">
+					<h2>Vooruitgang</h2>
+					<progress class="progression" value="0" max="10">
+				</div>
+			</div>
+			<!-- Results -->
+			<div class="body resultGood">
+				<div class="content">
+					<center>
+						<p class="bold-text">Good work!</p>
+						<br>
+						<br>Je hebt het goed gedaan tijdens je examen.
+						<br>
+						<br>Je kan dit sluiten, en jouw vaar-examen volgen.
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnClose">Sluiten</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Vooruitgang</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+			<div class="body resultBad">
+				<div class="content">
+					<center>
+						<p class="bold-text">Jij faalde</p>
+						<br>
+						<br>Je was niet klaar voor deze test, probeer het later opnieuw...
+						<br>
+						<br>
+					</center>
+				</div>
+				<div class="buttonspot">
+					<a href="#" class="button btnKick">Sluiten</a>
+				</div>
+				<div class="barre-progression">
+					<h2>Vooruitgang</h2>
+					<progress class="progression" value="10" max="10">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+	<script src="questions.js" type="text/javascript"></script>
+	<script src="scripts.js" type="text/javascript"></script>
+	<script src="debounce.min.js" type="text/javascript"></script>
+
+</body>
